@@ -3,8 +3,10 @@
 
 n,x = map(int,input().split())
 
-list=[]
-list.append(int(input().split()))
-
+num = list(map(int,input().split()))
+answer = []
 for i in range(0,n):
-  if list[i]<x : print(list[i])
+  if num[i] < x:
+    answer.append(num[i])
+
+print(answer)
