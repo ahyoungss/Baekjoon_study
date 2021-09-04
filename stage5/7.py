@@ -1,5 +1,5 @@
 #4344
-# 8/29
+# 9/2
 
 n = int(input())
 sum = 0
@@ -13,4 +13,7 @@ for i in range(n):
   for j in range(case[0]):
     if case[j+1] > average:
       count += 1
-  print("%.3f%",count/case[0])
+
+  print("{:.3f}%".format((count/case[0])*100))
+  sum = 0
+  count = 0

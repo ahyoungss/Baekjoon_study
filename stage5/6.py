@@ -1,10 +1,21 @@
-#8958
-#8/29
+# 8958
+#9/4
+# 질문글 참조
 
-n = int(input())
+n=int(input())
 
-case = []
-for i in range(n):
-  a = str(input())
-  for j in range(len(a)):
-    if a[j]='O' and a[j+1] ="O":
+for _ in range(n):
+    test=input()
+	
+    score=0
+    temp=1 #연속성을 위해 생긴 임시 변수
+    
+    for i in test:
+        if i == 'O':
+            score += temp
+            temp += 1
+	    
+        else:
+            temp = 1
+        
+    print(score)
